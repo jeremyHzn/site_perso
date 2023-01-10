@@ -7,13 +7,53 @@ body{
 }
 
 header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+header a{
+    margin-left: 30px;
+}
 
+nav a{
+    margin: 10px 20px;    
 }
 
 main{
 
 }
+section:nth-child(1){
+    margin-top: 0;
+    height: 80vh;
+    padding: 5%;
+    text-align: center;
+    display: inline-block;
+}
+section:nth-child(1) p{
+    width: 50%;
+    margin: 40px auto;
 
+}
+section:nth-child(1) a{
+    display: inline-block;
+    margin: 20px;
+    padding: 10px 50px;
+    border: 1px solid black;
+}
+section{
+
+    display: block;
+    margin: 100px 5%;
+}
+section h1{
+    font-size: 5em;
+}
 footer{
-    
+    margin-top: 20px;
+    border-top: 1px solid black ;
+    text-align: center;
+    height: 10vh;
 }
