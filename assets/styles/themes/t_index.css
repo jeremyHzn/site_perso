@@ -1,5 +1,28 @@
-:root{
-    --text-color: #;
-    --link-color: #;
-    --background-color: #;
+:root {
+    --text-color: #313131;
+    --link-color: rgb(185, 0, 132);
+    --background-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+h1 {
+    color: var(--text-color);
+}
+
+h2 {
+    color: var(--background-color);
+    background-color: var(--text-color);
+}
+
+a {
+    background-color: var(--background-color);
+    color: var(--link-color);
+    border: 1px solid var(--link-color);
+}
+
+p {
+    color: var(--text-color);
 }
