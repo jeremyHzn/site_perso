@@ -4,9 +4,12 @@
     --background-color: #ffffff;
 }
 
-header{
-    background-color: var(--background-color);
+header {
+    background-color: hsla(0, 0%, 100%, 0.522);
+    backdrop-filter: blur(4px);
+    border-bottom: 1px solid;
 }
+
 h1 {
     color: var(--text-color);
 }
@@ -16,11 +19,17 @@ h2 {
     background-color: var(--text-color);
 }
 
-a {
-    background-color: var(--background-color);
-    color: var(--link-color);
+nav a {
+    text-transform: uppercase;
 }
 
 p {
+    margin-top: 20px;
+    color: var(--text-color);
+}
+
+p a {
+    text-decoration: underline;
+    background-color: var(--background-color);
     color: var(--text-color);
 }

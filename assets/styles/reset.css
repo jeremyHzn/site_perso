@@ -2,8 +2,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     user-select:none;
     -webkit-user-select:none;
+    font-size: 18px;
 }
 *{
     box-sizing: border-box;
+    text-decoration: none;
     margin: 0;
+    line-height: 1.6;
 }
+
