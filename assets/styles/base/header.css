@@ -21,8 +21,3 @@ nav a {
     padding: 5px 10px;
 }
 
-@media screen and (min-width: 580px) {
-    nav{
-        display: inline;
-    }
-}

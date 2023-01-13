@@ -1,0 +1,40 @@
+@media screen and (min-width: 580px) {
+    /* affichage liens de navigation ecran > 580px */
+    nav{
+        display: inline;
+    }
+}
+@media screen and (min-width: 700px) {
+    /* page histoire, la marge des images dans les sections  */
+    section div img {
+        margin: 0 10px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    /* taille titre hero */
+    section:nth-child(1) h1 {
+        font-size: 3.6em;
+    }
+
+    /* image Albedo */
+    section:nth-child(1) div:nth-child(1) {
+        display: block;
+        z-index: 10;
+        height: 0px;
+        width: 0px;
+        position: relative;
+        bottom: 100px;
+        right: 0px;
+    }
+
+    /* titre et paragraphe hero */
+    section:nth-child(1) h1,
+    section:nth-child(1) p {
+        text-align: right;
+    }
+}
+
+
+
+
+

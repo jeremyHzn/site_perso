@@ -1,0 +1,10 @@
+@import "../themes/theme.css";
+
+@import "../reset.css";
+
+@import "../base/header.css";
+@import "../base/main.css";
+@import "../base/footer.css";
+
+@import "../responsive/media.css"; 
+@import "../responsive/flex.css";

@@ -1,5 +1,43 @@
+main {
+    position: relative;
+    margin: 0 5%;
+}
+
+section {
+    display: block;
+    margin-top: 100px;
+    text-align: justify;
+}
+
+section h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    padding-left: 2%;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+div img{
+    height: 400px;
+}
+
+p{
+    margin-top: 20px;
+}
+
+p a {
+    text-decoration: underline;
+}
+
+section:last-child{
+    margin-bottom: 100px;
+}
+
 /* le HERO */
 section:nth-child(1) {
+    text-align: center;
     position: relative;
     height: 80vh;
     z-index: 100;
@@ -33,36 +71,4 @@ section:nth-child(1) a {
     display: inline-block;
     padding: 10px 50px;
     border: 1px solid var(--text-color);
-}
-
-
-@media screen and (min-width: 1200px) {
-
-    /*
-    * titre hero
-    */
-    section:nth-child(1) h1 {
-        font-size: 3.6em;
-    }
-
-    /*
-    * image Albedo
-    */
-    section:nth-child(1) div:nth-child(1) {
-        display: block;
-        z-index: 10;
-        height: 0px;
-        width: 0px;
-        position: relative;
-        bottom: 100px;
-        right: 0px;
-    }
-
-    /*
-    * titre et paragraphe hero
-    */
-    section:nth-child(1) h1,
-    section:nth-child(1) p {
-        text-align: right;
-    }
 }
