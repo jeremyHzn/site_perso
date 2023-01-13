@@ -1,0 +1,35 @@
+main {
+    position: relative;
+    margin: 0 5%;
+}
+
+section {
+    display: block;
+    margin-top: 100px;
+    text-align: justify;
+}
+
+section h1 {
+    font-size: 3em;
+}
+
+section h2 {
+    padding-left: 2%;
+    margin-bottom: 20px;
+}
+
+section:nth-child(1){
+    text-align: center;
+}
+
+section:last-child{
+    margin-bottom: 100px;
+}
+
+p{
+    margin-top: 20px;
+}
+
+p a {
+    text-decoration: underline;
+}

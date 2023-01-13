@@ -2,13 +2,24 @@
     --text-color: #313131;
     --link-color: rgb(185, 0, 132);
     --background-color: #ffffff;
+    --link-hover: #ffd700;
 }
 
 header {
     background-color: hsla(0, 0%, 100%, 0.522);
     backdrop-filter: blur(4px);
-    border-bottom: 1px solid;
 }
+
+nav a{
+    color: var(--text-color);
+    transition: 0.3s;
+}
+nav a:hover{
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+
 
 h1 {
     color: var(--text-color);
@@ -19,17 +30,18 @@ h2 {
     background-color: var(--text-color);
 }
 
-nav a {
-    text-transform: uppercase;
-}
 
 p {
-    margin-top: 20px;
+    
     color: var(--text-color);
 }
 
 p a {
-    text-decoration: underline;
+    
     background-color: var(--background-color);
     color: var(--text-color);
+}
+
+section:nth-child(n+2) p a:hover{
+    color: var(--link-hover);
 }

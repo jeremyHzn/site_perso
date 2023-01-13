@@ -1,96 +1,69 @@
 @import "../reset.css";
-@import "../themes/t_index.css";
+@import "../header.css";
 @import "../flex.css";
+@import "../structure.css";
+@import "../footer.css";
 
-header {
-    padding: 20px;
-    position: sticky;
-    top: 0;
-    z-index: 500;
-}
+@import "../themes/theme.css";
 
-header img{
-    height: 25px;
-}
-nav a{
-    margin-left: 20px;
-}
 
-main {
-    position: relative;
-    margin: 0 5%;
-}
-
+/* le HERO */
 section:nth-child(1) {
     position: relative;
-    height: 80vh; 
-    z-index: 100; 
+    height: 80vh;
+    z-index: 100;
+}
+
+/* le Bouton du Hero */
+section:nth-child(1) a {
+    text-decoration: none;
 }
 
 /*
- * Gauche Albedo
+ * image Albedo
 */
-section:nth-child(1) div:nth-child(1){
+section:nth-child(1) div:nth-child(1) {
     display: none;
-    z-index: -100;
-    height: 0px;
-    width: 0px;
-    position: relative;
-    bottom: 100px;
-    right: 0px;
 }
 
-section:nth-child(1) div:nth-child(1) img{
+/* taille image */
+section:nth-child(1) div:nth-child(1) img {
     height: 800px;
 }
 
-section:nth-child(1) div:nth-child(2){
-    z-index: 2;
-}
-section:nth-child(1) h1,
-section:nth-child(1) p {
-    text-align: center;
+/* text hero */
+section:nth-child(1) div:nth-child(2) {
+    z-index: 50;
 }
 
+ /* bouton hero */
 section:nth-child(1) a {
     display: inline-block;
-    margin: 20px;
     padding: 10px 50px;
-    border: 1px solid black;
+    border: 1px solid var(--text-color);
 }
 
-section {
-    display: block;
-    margin-top: 100px;
-}
 
-section h1 {
-    font-size: 4em;
-}
+@media screen and (min-width: 1200px) {
+    section:nth-child(1) h1 {
+        font-size: 3.6em;
+    }
 
-section h2{
-    padding-left: 2%;
-    margin-bottom: 20px;
-}
-
-footer {
-    margin-top: 20px;
-    border-top: 1px solid black;
-    text-align: center;
-    height: 10vh;
-}
-@media screen and (min-width: 1500px) {
-/*
- * Gauche Albedo
-*/
-section:nth-child(1) div:nth-child(1){
-    display: block;
-
-}
+    /*
+    * image Albedo
+    */
+    section:nth-child(1) div:nth-child(1) {
+        display: block;
+        z-index: 10;
+        height: 0px;
+        width: 0px;
+        position: relative;
+        bottom: 100px;
+        right: 0px;
+    }
 
     section:nth-child(1) h1,
     section:nth-child(1) p {
-    text-align: right;
-    margin-right: 150px;
-}
+        text-align: right;
+    }
 }
