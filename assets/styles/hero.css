@@ -1,0 +1,68 @@
+/* le HERO */
+section:nth-child(1) {
+    position: relative;
+    height: 80vh;
+    z-index: 100;
+}
+
+/* le Bouton du Hero */
+section:nth-child(1) a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/*
+ * image Albedo
+*/
+section:nth-child(1) div:nth-child(1) {
+    display: none;
+}
+
+/* taille image */
+section:nth-child(1) div:nth-child(1) img {
+    height: 800px;
+}
+
+/* text hero */
+section:nth-child(1) div:nth-child(2) {
+    z-index: 50;
+}
+
+ /* bouton hero */
+section:nth-child(1) a {
+    display: inline-block;
+    padding: 10px 50px;
+    border: 1px solid var(--text-color);
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    /*
+    * titre hero
+    */
+    section:nth-child(1) h1 {
+        font-size: 3.6em;
+    }
+
+    /*
+    * image Albedo
+    */
+    section:nth-child(1) div:nth-child(1) {
+        display: block;
+        z-index: 10;
+        height: 0px;
+        width: 0px;
+        position: relative;
+        bottom: 100px;
+        right: 0px;
+    }
+
+    /*
+    * titre et paragraphe hero
+    */
+    section:nth-child(1) h1,
+    section:nth-child(1) p {
+        text-align: right;
+    }
+}

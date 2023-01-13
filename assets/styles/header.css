@@ -6,12 +6,8 @@ header {
     border-bottom: 1px solid;
 }
 
-header img {
+header img , header a {
     height: 25px;
-}
-
-header a{
-    height: 0px;
 }
 
 nav {
@@ -25,7 +21,7 @@ nav a {
     padding: 5px 10px;
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (min-width: 580px) {
     nav{
         display: inline;
     }

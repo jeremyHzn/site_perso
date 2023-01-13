@@ -1,8 +1,19 @@
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .space-between{
     justify-content: space-between;
+    
+}
+.just-ctt-center{
+    justify-content: center;
 }
 
+@media screen and (min-width: 700px){
+    .flex{
+        flex-wrap: nowrap;
+    }
+    
+}
