@@ -1,15 +1,3 @@
-@media screen and (min-width: 580px) {
-    /* affichage liens de navigation ecran > 580px */
-    nav{
-        display: inline;
-    }
-}
-@media screen and (min-width: 700px) {
-    /* page histoire, la marge des images dans les sections  */
-    section div img {
-        margin: 0 10px;
-    }
-}
 @media screen and (min-width: 1200px) {
     /* taille titre hero */
     section:nth-child(1) h1 {
@@ -31,6 +19,25 @@
     section:nth-child(1) h1,
     section:nth-child(1) p {
         text-align: right;
+    }
+
+}
+@media screen and (min-width: 700px) {
+    /* page histoire, la marge des images dans les sections  */
+    section div img {
+        margin: 0 10px;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    /* affichage liens de navigation ecran > 580px */
+    header input[type="checkbox"], 
+    header span,
+    nav:first-of-type{
+        display: none;
+    }
+    nav:last-child{
+        display: inline;
     }
 }
 

@@ -3,14 +3,20 @@
     --link-color: rgb(185, 0, 132);
     --background-color: #ffffff;
     --link-hover: #ffd700;
+    --background-header: hsla(0, 0%, 100%, 0.4);
 }
 
 header {
-    background-color: hsla(0, 0%, 100%, 0.522);
-    backdrop-filter: blur(8px);
+    background-color: var(--background-header);
+    
+}
+header nav:first-of-type{
+    background-color: var(--background-color);
 }
 
-
+header span,header span::before,header span::after{
+    background-color: var(--text-color);
+}
 
 nav a{
     color: var(--text-color);
@@ -55,4 +61,5 @@ section:nth-child(1) a:hover{
 section:nth-child(n+2) p a:hover{
     color: var(--link-hover);
 }
+
 

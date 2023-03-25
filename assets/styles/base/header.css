@@ -1,23 +1,86 @@
 header {
+    backdrop-filter: blur(8px);
     padding: 20px;
+    border-bottom: 1px solid;
     position: sticky;
     top: 0;
-    z-index: 500;
-    border-bottom: 1px solid;
+    z-index: 2;
 }
 
-header img , header a {
+header span,
+header span::before,
+header span::after,
+header input[type="checkbox"],
+header nav:first-of-type{
+    position: absolute;
+}
+
+header span {
+    z-index: 2;
+    top: 30px;
+    right: 20px;
+    width: 26px;
+    height: 3px;
+}
+
+header span::before,
+header span::after {
+    display: block;
+    width: 100%;
+    height: 3px;
+    content: "";
+}
+
+header span::before {
+    top: -8px;
+}
+
+header span::after {
+    top: 8px;
+}
+
+header input[type="checkbox"]{
+    top: 20px;
+    right: 18px;
+    height: 25px;
+    width: 29px;
+    z-index: 3;
+    opacity: 0;
+}
+
+header input:checked ~ nav:first-of-type,
+nav:first-of-type{
+    transition: 0.3s;
+}
+
+header input:checked ~ nav:first-of-type {
+    left: 0px;
+}
+
+header img{
     height: 25px;
 }
 
-nav {
+nav:first-of-type {
+    padding-top: 50px;
+    left: -100vw;
+    top: 73px;
+    height: 95vh;
+    width: 100vw;
+}
+
+nav:first-of-type a{
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav:last-child{
     display: none;
 }
 
-nav a {
-    margin-left: 20px;
-    text-transform: uppercase;
-    font-weight: 500;
-    padding: 5px 10px;
+nav:last-child a{
+    padding: 10px;
+    margin: 0 20px;
 }
-

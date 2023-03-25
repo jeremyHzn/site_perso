@@ -1,6 +1,8 @@
 main {
     position: relative;
     margin: 0 5%;
+    /* par rapport au header qui est à z-index 2 */
+    z-index: 1;
 }
 
 section {
@@ -19,28 +21,27 @@ section h2 {
     text-align: left;
 }
 
-div img{
+div img {
     height: 400px;
 }
 
-p{
+p {
     margin-top: 20px;
+    
 }
 
 p a {
     text-decoration: underline;
 }
 
-section:last-child{
+section:last-child {
     margin-bottom: 100px;
 }
 
 /* le HERO */
 section:nth-child(1) {
     text-align: center;
-    position: relative;
-    height: 80vh;
-    z-index: 100;
+    min-height: 90vh;
 }
 
 /* le Bouton du Hero */
@@ -49,9 +50,7 @@ section:nth-child(1) a {
     text-transform: uppercase;
 }
 
-/*
- * image Albedo
-*/
+/* image hero */
 section:nth-child(1) div:nth-child(1) {
     display: none;
 }
@@ -61,14 +60,25 @@ section:nth-child(1) div:nth-child(1) img {
     height: 800px;
 }
 
-/* text hero */
-section:nth-child(1) div:nth-child(2) {
-    z-index: 50;
-}
-
- /* bouton hero */
+/* bouton hero */
 section:nth-child(1) a {
     display: inline-block;
     padding: 10px 50px;
     border: 1px solid var(--text-color);
+}
+
+
+section:nth-child(n+2) section{
+    display: grid;
+    gap: 40px;
+}
+
+section:nth-child(n+2) section div{
+    text-align: center;
+    margin: auto;
+}
+
+section:nth-child(n+2) div article > p {
+    display: none;
+    
 }
