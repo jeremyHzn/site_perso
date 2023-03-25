@@ -10,6 +10,12 @@ header {
     background-color: var(--background-header);
     
 }
+#galerie article{
+    border-color: var(--text-color);
+}
+section:nth-child(1) a {
+    border-color: var(--text-color);
+}
 header nav:first-of-type{
     background-color: var(--background-color);
 }
@@ -20,7 +26,6 @@ header span,header span::before,header span::after{
 
 nav a{
     color: var(--text-color);
-    transition: 0.3s;
 }
 nav a:hover{
     background-color: var(--text-color);
@@ -50,7 +55,7 @@ p a {
 section:nth-child(1) a{
     background-color: var(--text-color);
     color: var(--background-color);
-    transition: 0.4s;
+    
 }
 
 section:nth-child(1) a:hover{

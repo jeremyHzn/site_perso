@@ -65,20 +65,31 @@ section:nth-child(1) a {
     display: inline-block;
     padding: 10px 50px;
     border: 1px solid var(--text-color);
+    transition: 0.4s;
 }
-
-
-section:nth-child(n+2) section{
+#galerie{
     display: grid;
-    gap: 40px;
+    margin-top: 0px;
+    grid-gap: 20px;
+}
+#galerie article{
+    padding: 20px;
+    border: 2px solid;
 }
 
-section:nth-child(n+2) section div{
+
+/**
+ * animation
+/*/
+#animations{
+    height: 400px;
+}
+
+#animations p{
     text-align: center;
-    margin: auto;
-}
-
-section:nth-child(n+2) div article > p {
+    text-transform: uppercase;
+} 
+#element{
     display: none;
-    
+    margin: 0 auto;
 }

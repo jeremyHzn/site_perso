@@ -48,8 +48,10 @@ header input[type="checkbox"]{
     opacity: 0;
 }
 
+header nav a,
 header input:checked ~ nav:first-of-type,
-nav:first-of-type{
+nav:first-of-type
+{
     transition: 0.3s;
 }
 

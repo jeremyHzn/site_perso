@@ -20,12 +20,44 @@
     section:nth-child(1) p {
         text-align: right;
     }
-
+    #animations{
+        position: relative;
+    }
+    #animations p{
+        display: none;
+    }
+    #element{
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        left: 500px;
+        display: inline;
+        top: 350px;
+        border: 1px solid black;
+        animation-name: RightMove;
+        animation-duration: 5s;
+        animation-timing-function:linear;
+    }
+    @keyframes RightMove {
+        from{
+            display: inline;
+            left: 0px;
+        }
+        to{
+            display: inline;
+            left: 500px;
+        }
+    }
 }
+
 @media screen and (min-width: 700px) {
     /* page histoire, la marge des images dans les sections  */
     section div img {
         margin: 0 10px;
+    }
+    
+    #galerie{
+        grid-template-columns: repeat(6, 3fr);
     }
 }
 
@@ -39,9 +71,14 @@
     nav:last-child{
         display: inline;
     }
+    
+    #garlerie{
+        grid-template-columns: repeat(3, 3fr);
+    }
+    #mainI{
+        grid-column: 1 / 4;
+        grid-row: 1 / 4;
+    }
 }
-
-
-
 
 
