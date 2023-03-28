@@ -1,3 +1,7 @@
+::-webkit-scrollbar{
+    display: none;
+}
+
 main {
     position: relative;
     margin: 0 5%;
@@ -72,11 +76,14 @@ section:nth-child(1) a {
     margin-top: 0px;
     grid-gap: 20px;
 }
-#galerie article{
-    padding: 20px;
-    border: 2px solid;
-}
 
+#galerie img{
+    max-width: 100%;
+    min-height: 100%;
+}
+#galerie  article{
+    text-align: center;
+}
 
 /**
  * animation

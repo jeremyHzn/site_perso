@@ -5,7 +5,9 @@
     --link-hover: #ffd700;
     --background-header: hsla(0, 0%, 100%, 0.4);
 }
-
+body{
+    background-color: var(--background-color);
+}
 header {
     background-color: var(--background-header);
     
