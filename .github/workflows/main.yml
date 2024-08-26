@@ -1,3 +1,7 @@
+on:
+  push:
+    branches:
+    - main
 jobs:
   my-job:
     # Importing a reusable workflow from another repository and branch
